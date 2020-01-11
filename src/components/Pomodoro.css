@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box
+}
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Baloo;
+  font-size: 24px
+}
+.pomodoro-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: beige
+}
+.pomodoro-container {
+  margin: 0 auto;
+  width: 500px;
+  padding: 2rem;
+  background-color: #ff99ab;
+  box-shadow: 0 0 100px 20px rgba(0,0,0,.7),0 0 45px 50px inset #9f0833,15px 15px 5px 10px;
+  border-radius: 50%
+}
+.react-icons {
+  vertical-align: middle;
+  transition: transform .3s ease-out
+}
+.react-icons:hover {
+  transform: scale(1.2)
+}
+.react-icons:active {
+  color: #9f0833
+}
+.pomodoro-btn {
+  all: unset;
+  cursor: pointer;
+  font-size: 2em
+}
+.btn-level {
+  display: inline-block;
+  font-size: 2em
+}
+.length-control {
+  width: 50%;
+  display: inline-block
+}
+#time-left {
+  font-size: 2em;
+  font-family: monospace
+}
+.animated {
+  animation: pulse .5s .4s ease-out infinite alternate
+}
+@keyframes pulse {
+  0%,
+  80% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(.8);
+    color: #6805a5
+  }
+}
+#break-length,
+#session-length {
+  width: 1.1em
+}
+@media only screen and (max-width:501px) {
+  .pomodoro-container {
+    border-radius: 0;
+    box-shadow: 0 0 150px 30px inset #9f0833;
+    overflow-y: auto;
+    min-height: 100vh;
+    padding: 0
+  }
+  .length-control {
+    width: 100%
+  }
+}
