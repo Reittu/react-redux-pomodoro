@@ -2,7 +2,7 @@
 
 ## Live demo
 
-[Demo](https://dr2k8.csb.app/)
+[Demo](https://dr2k8.codesandbox.io/)
 
 [Editor](https://codesandbox.io/s/react-redux-pomodoro-dr2k8?fontsize=14&hidenavigation=1&theme=dark)
 
